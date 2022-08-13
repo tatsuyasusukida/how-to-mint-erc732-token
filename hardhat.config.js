@@ -6,15 +6,11 @@ require('@nomiclabs/hardhat-etherscan')
 
 module.exports = {
   solidity: "0.8.9",
-  defaultNetwork: "goerli",
+  defaultNetwork: "rinkeby",
   networks: {
     hardhat: {},
-    goerli: {
-      url: process.env.API_URL_GOERLI,
-      accounts: [`0x${process.env.PRIVATE_KEY}`],
-    },
     rinkeby: {
-      url: process.env.API_URL_RINKEBY,
+      url: process.env.API_URL,
       accounts: [`0x${process.env.PRIVATE_KEY}`],
     },
   },

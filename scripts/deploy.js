@@ -6,7 +6,7 @@ async function main () {
     const susukidaNFT = await SusukidaNFT.deploy()
 
     console.info(`Contract deployed to address: ${susukidaNFT.address}`)
-    console.info(`https://goerli.etherscan.io/address/${susukidaNFT.address}`)
+    console.info(`https://rinkeby.etherscan.io/address/${susukidaNFT.address}`)
   } catch (err) {
     console.error(err)
   }

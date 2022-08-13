@@ -7,7 +7,8 @@
     "compile": "hardhat compile",
     "deploy": "hardhat run scripts/deploy.js",
     "verify": "source .env && hardhat verify $CONTRACT_ADDRESS --show-stack-traces",
-    "mint": "hardhat run scripts/mint.js"
+    "mint": "hardhat run scripts/mint.js",
+    "gist": "source .env && gist -u $GIST_ID -od '🐵 How to mint your own ERC-72 NFT' contracts/SusukidaNFT.sol nft/metadata.json scripts/deploy.js scripts/mint.js .env.example hardhat.config.js"
   },
   "keywords": [],
   "author": "",
